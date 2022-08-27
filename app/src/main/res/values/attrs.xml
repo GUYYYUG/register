@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <declare-styleable name="GradientProgressBar">
+      <attr name="textSize" format="dimension" ></attr>
+      <attr name="textColor" format="color" ></attr>
+      <attr name="bgColor" format="color" ></attr>
+      <attr name="startColor" format="color" ></attr>
+      <attr name="endColor" format="color" ></attr>
+      <attr name="rectRadius" format="dimension" ></attr>
+      <attr name="loadSpeed" format="integer" ></attr>
+      <attr name="lineWidth" format="dimension" ></attr>
+   </declare-styleable>
+   <declare-styleable name="RoundProgressBar">
+      <attr name="textSizeRound" format="dimension" ></attr>
+      <attr name="textColorRound" format="color" ></attr>
+      <attr name="bgColorRound" format="color" ></attr>
+      <attr name="currentColorRound" format="color" ></attr>
+      <attr name="circleWidthRound" format="dimension" ></attr>
+   <attr name="loadSpeedRound" format="integer" ></attr>
+   </declare-styleable>
+   <declare-styleable name="CircleLoadingView">
+      <!--内圆颜色-->
+      <attr name="in_color" format="color" />
+      <!--外圆颜色-->
+      <attr name="out_color" format="color" />
+      <!--字体颜色-->
+      <attr name="text_color" format="color" />
+      <!--字体大小-->
+      <attr name="text_size" format="dimension" />
+      <!--圆圈颜色-->
+      <attr name="dot_color" format="color" />
+   </declare-styleable>
+</resources>

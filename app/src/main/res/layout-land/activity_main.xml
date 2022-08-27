@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/myimageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="drawSomething"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="-28dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:text="START"
+        android:textSize="8sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/editText1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="8dp"
+        android:text="Please lift your finger in the direction of the arrow "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart_line"
+        android:layout_width="198dp"
+        android:layout_height="171dp"
+
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/myimageview"
+
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.example.register.CircleLoadingView
+        android:id="@+id/circleloading"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text_size="30dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
